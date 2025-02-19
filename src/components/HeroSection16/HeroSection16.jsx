@@ -57,8 +57,8 @@ const HeroSection16 = () => {
                 <p> Active Vacancies, Available Right Now!  </p>
               </div>
             </div>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center justify-center shadow-2xl rounded-lg  mx-auto md:gap-1 gap-4 bg-white p-4  text-xs md:text-base ">
-              <select className="py-2 px-4 2xl:w-96  md:w-60 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center justify-center shadow-2xl rounded-lg  mx-auto  gap-4 bg-white p-4  text-xs md:text-base ">
+              <select className="py-2 px-4  2xl:w-96  md:w-60 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                 <option>Skills</option>
                 {/* Add more skill options here */}
               </select>
@@ -66,9 +66,12 @@ const HeroSection16 = () => {
                 <option>Country</option>
                 {/* Add more country options here */}
               </select>
-              <button className="bg-blue-500 md:w-40 w-28 text-white px-4 py-2 rounded-md hover:bg-blue-600 text-xs md:text-base">
+              <div className=''>
+              <button className="bg-blue-500  2xl:w-96  md:w-60  w-28 text-white px-4 py-2 rounded-md hover:bg-blue-600 text-xs md:text-base">
                 SEARCH JOB
               </button>
+              </div>
+             
             </div>
             <div className='flex md:flex-row flex-col items-center gap-1 justify-center lg:my-4 my-2 text-sm md:text-base'>
               <div className='flex  items-center justify-center gap-1'>

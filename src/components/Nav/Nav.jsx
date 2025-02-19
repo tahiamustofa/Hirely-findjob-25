@@ -21,29 +21,15 @@ export function NavbarDefault() {
 
     const navList = (
         <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-            <li><NavLink to="/">Home</NavLink></li>
-
-            <li>   <NavLink to={'/findjob'}>
-                Find Job
-            </NavLink></li>
-
-            <li>   <NavLink to={'/login'}>
-                LoginPage
-            </NavLink></li>
-
-            <li>   <NavLink to={'/findjob'}>
-                Find Job
-            </NavLink></li>
-
-
-
-
+            <li>   <NavLink to="/">Home</NavLink></li>
+            <li>   <NavLink to={'/findjob'}>  Find Job </NavLink></li>
+            <li>   <NavLink to={'/get'}>   Get Support   </NavLink></li>
         </ul>
     );
 
     return (
         <Navbar className="mx-auto  py-2  lg:py-3">
-            <div className="2xl:max-w-[1400px] max-w-full px-3 md:px-8 xl:max-w-[1240px] container  mx-auto flex items-center justify-between text-black">
+            <div className="px-6 max-w-full mx-auto md:px-8 lg:px-12 xl:px-16 2xl:px-20   flex items-center justify-between text-black">
                 <Typography
                     as="a"
                     href="#"
@@ -57,9 +43,11 @@ export function NavbarDefault() {
                     <Button
                         variant="#0275D8"
                         size="sm"
-                        className="hidden lg:inline-block bg-[#f4f7fb] text-black"
-                    >
-                        <span>Log In</span>
+                        className="hidden lg:inline-block bg-[#f4f7fb] text-black" >
+
+                        <li className="list-none">   <NavLink to={'/login'}>
+                            Login
+                        </NavLink></li>
                     </Button>
 
                     <Button
@@ -71,14 +59,14 @@ export function NavbarDefault() {
                             Register
                         </NavLink></li>
                     </Button>
-                    
+
                     <Button
                         variant="#0275D8"
                         size="sm"
                         className="hidden lg:inline-block bg-[#0275D8]"
                     >
                         <li className="list-none">   <NavLink to={'/agency'}>
-                            Agency Form
+                            Agency
                         </NavLink></li>
                     </Button>
 

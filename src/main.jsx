@@ -9,6 +9,7 @@ import FindJob from './components/FindJob/FindJob.jsx';
 import LoginPage from './components/LoginPage/LoginPage.jsx';
 import Register from './components/Register/Register.jsx';
 import AgencySignupForm from './components/AgencySignupForm/AgencySignupForm.jsx';
+import JobDetailsPage from './components/JobDetailsPage/JobDetailsPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: '/agency',
         element:<AgencySignupForm></AgencySignupForm>
+      },
+      {
+        path: '/jobdetailspage',
+        element:<JobDetailsPage></JobDetailsPage>
       },
     ]
   }

@@ -37,7 +37,7 @@ export default function RegisterForm() {
             required
           />
           <div className="flex items-center border rounded-lg p-2">
-            <span className="mr-2">🇧🇩 +880</span>
+            <span className="mr-2 flex text-xs">🇧🇩 +880</span>
             <input
               type="text"
               name="phone"

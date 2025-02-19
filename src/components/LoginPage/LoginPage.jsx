@@ -4,7 +4,7 @@ import './LoginPage.css'
 const LoginPage = () => {
     return (<div>
         
-        <div  className=' loginbody 2xl:max-w-full max-w-full px-3 md:px-8 xl:max-w-[1550px] container mx-auto flex justify-center items-center h-svh'>
+        <div  className=' loginbody 2xl:max-w-full max-w-full px-3 md:px-8 xl:max-w-[1550px] container mx-auto flex justify-center items-center h-max'>
        
 <main className='flex justify-center items-center mx-auto'>
 

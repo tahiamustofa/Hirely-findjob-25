@@ -26,7 +26,7 @@ export default function AgencySignupForm() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-slate-100 to-indigo-600 p-4">
       <div className="bg-white shadow-md rounded-lg p-6 w-full  max-w-xl">
         <h2 className="text-center text-xl font-semibold mb-4">Create an Agency Account</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
