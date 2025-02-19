@@ -5,7 +5,7 @@ import {
     Typography,
     Button,
     IconButton,
-    
+
 } from "@material-tailwind/react";
 import { NavLink } from "react-router-dom";
 
@@ -22,21 +22,21 @@ export function NavbarDefault() {
     const navList = (
         <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             <li><NavLink to="/">Home</NavLink></li>
+
             <li>   <NavLink to={'/findjob'}>
                 Find Job
             </NavLink></li>
 
             <li>   <NavLink to={'/login'}>
-            LoginPage
+                LoginPage
             </NavLink></li>
 
             <li>   <NavLink to={'/findjob'}>
                 Find Job
             </NavLink></li>
 
-            <li>   <NavLink to={'/findjob'}>
-                Find Job
-            </NavLink></li>
+
+
 
         </ul>
     );
@@ -53,7 +53,7 @@ export function NavbarDefault() {
                 </Typography>
                 <div className="hidden lg:block">{navList}</div>
                 <div className="flex items-center xl:gap-2 gap-x-1">
-                   
+
                     <Button
                         variant="#0275D8"
                         size="sm"
@@ -67,21 +67,26 @@ export function NavbarDefault() {
                         size="sm"
                         className="hidden lg:inline-block bg-[#cbe1f5] text-black"
                     >
-                        <span>Sign in</span>
+                        <li className="list-none">   <NavLink to={'/register'}>
+                            Register
+                        </NavLink></li>
                     </Button>
+                    
                     <Button
                         variant="#0275D8"
                         size="sm"
                         className="hidden lg:inline-block bg-[#0275D8]"
                     >
-                        <span>For Agency</span>
+                        <li className="list-none">   <NavLink to={'/agency'}>
+                            Agency Form
+                        </NavLink></li>
                     </Button>
-                  
-                        <select className="border border-gray-300 rounded-md text-[#0275D8] p-1 focus:outline-none focus:ring-2 focus:ring-blue-500 hidden lg:inline-block">
-                            <option>English</option>
-                            <option>English</option>
-                        </select>
-                   
+
+                    <select className="border border-gray-300 rounded-md text-[#0275D8] p-1 focus:outline-none focus:ring-2 focus:ring-blue-500 hidden lg:inline-block">
+                        <option>English</option>
+                        <option>English</option>
+                    </select>
+
 
 
                 </div>

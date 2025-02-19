@@ -14,11 +14,11 @@ const LoginForm = () => {
   return (
     <div className="flex min-h-screen items-center justify-center p-2">
       <div className="w-full max-w-xl rounded-lg bg-white p-6 shadow-lg">
-        <h2 className="mb-4 text-center text-2xl font-semibold">Welcome Back!</h2>
-        <p className="mb-4 text-center text-gray-600">
+        <h2 className="mb-4 text-center text-2xl font-semibold text-black">Welcome Back!</h2>
+        <p className="mb-4 text-center text-black">
           If you already have an account, sign in using your email address or mobile number.
         </p>
-        <div className="mb-4 flex justify-center space-x-4">
+        <div className="mb-4 flex justify-center space-x-4 text-black">
           <button
             className={`px-4 py-2 rounded-md text-sm font-medium ${
               loginMethod === "email" ? "bg-blue-500 text-white" : "bg-gray-200 text-gray-700"
@@ -37,7 +37,7 @@ const LoginForm = () => {
           </button>
         </div>
         <form onSubmit={handleSubmit}>
-          <div className="mb-4">
+          <div className="mb-4 text-black">
             <input
               type="text"
               placeholder={loginMethod === "email" ? "Enter Your Email Address" : "Enter Your Mobile Number"}
@@ -65,13 +65,13 @@ const LoginForm = () => {
             SIGN IN
           </button>
         </form>
-        <div className="my-4 text-center text-gray-500">OR</div>
+        <div className="my-4 text-center text-black">OR</div>
         <button className="flex gap-2 w-full items-center justify-center rounded-md border py-2 hover:bg-gray-100">
         <FcGoogle className="text-xl" />
          
           Sign in with Google
         </button>
-        <p className="mt-4 text-center text-sm text-gray-600">
+        <p className="mt-4 text-center text-sm text-black">
           Don’t have an account? <a href="#" className="text-blue-500 hover:underline">Register here</a>
         </p>
       </div>
