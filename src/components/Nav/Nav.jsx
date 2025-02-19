@@ -26,8 +26,8 @@ export function NavbarDefault() {
                 Find Job
             </NavLink></li>
 
-            <li>   <NavLink to={'/findjob'}>
-                Find Job
+            <li>   <NavLink to={'/login'}>
+            LoginPage
             </NavLink></li>
 
             <li>   <NavLink to={'/findjob'}>

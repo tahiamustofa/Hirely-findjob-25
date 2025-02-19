@@ -104,7 +104,7 @@ const Expire = () => {
   };
 
   return (
-    <div className="md:my-10 2xl:mx-1 mx-5">
+    <div className="md:my-10 2xl:mx-1 mx-5 my-5">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-between w-full p-6 bg-white">
         <div className="flex gap-2 items-start">
           <div><h2 className="lg:text-2xl md:text-xl text-base text-black"> Expire Soon Jobs </h2></div>
